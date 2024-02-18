@@ -105,7 +105,7 @@
             <section class="pb-10">
                 <div class="text-center">
                     <h1 class="text-[#030712] font-raleway text-4xl font-bold mb-6">P.H Paribahan</h1>
-                    <p class="text-[#03071299] font-inter text-lg">Yes, you can run unit tests and view the results
+                    <p class="text-[#03071299] font-inter text-lg mb-14">Yes, you can run unit tests and view the results
                         directly within the app.
                         The integrated <br> testing features allow for a streamlined .</p>
                 </div>
@@ -122,7 +122,7 @@
                             </div>
                             <div class="flex bg-[#1dd10026] justify-center items-center px-5 rounded-xl gap-1">
                                 <div><img src="./images/seat-green.png" alt=""></div>
-                                <p class="text-lg font-medium text-[#1dd100]"><span>8</span> Seats left</p>
+                                <p class="text-lg font-medium text-[#1dd100]"><span id="seats">8</span> Seats left</p>
                             </div>
                         </div>
                         <div class="bg-[#f7f8f8] p-8 rounded-3xl mt-7">
@@ -185,35 +185,39 @@
                         </div>
                         <div class="flex gap-10 font-inter text-lg font-medium mt-10">
                             <div class="mt-5">A</div>
-                            <div class="rounded-xl py-5 px-20 bg-[#F7F8F8] text-[#03071280]">A1</div>
-                            <div class="rounded-xl py-5 px-20 bg-[#F7F8F8] text-[#03071280] mr-3">A2</div>
-                            <div class="rounded-xl ml-20 py-5 px-20 bg-[#F7F8F8] text-[#03071280]">A3</div>
-                            <div class="py-5 px-20 bg-[#F7F8F8] text-[#03071280] rounded-xl">A4</div>
+                            <div class="rounded-xl py-5 px-20 bg-[#F7F8F8] text-[#03071280] seat-number">A1</div>
+                            <div class="rounded-xl py-5 px-20 bg-[#F7F8F8] text-[#03071280] mr-3 seat-number">A2</div>
+                            <div class="rounded-xl ml-20 py-5 px-20 bg-[#F7F8F8] text-[#03071280] seat-number">A3</div>
+                            <div class="py-5 px-20 bg-[#F7F8F8] text-[#03071280] rounded-xl seat-number">A4</div>
                         </div>
                         <div class="flex gap-10 font-inter text-lg font-medium mt-10">
                             <div class="mt-5">B</div>
-                            <div class="rounded-xl py-5 px-20 bg-[#F7F8F8] text-[#03071280]">B1</div>
-                            <div class="rounded-xl py-5 px-20 bg-[#F7F8F8] text-[#03071280] mr-3">B2</div>
-                            <div class="ml-20 py-5 px-20 bg-[#F7F8F8] text-[#03071280] rounded-xl">B3</div>
-                            <div class="py-5 px-20 bg-[#F7F8F8] text-[#03071280] rounded-xl">B4</div>
+                            <div class="rounded-xl py-5 px-20 bg-[#F7F8F8] text-[#03071280] seat-number">B1</div>
+                            <div class="rounded-xl py-5 px-20 bg-[#F7F8F8] text-[#03071280] mr-3 seat-number">B2</div>
+                            <div class="ml-20 py-5 px-20 bg-[#F7F8F8] text-[#03071280] rounded-xl seat-number">B3</div>
+                            <div class="py-5 px-20 bg-[#F7F8F8] text-[#03071280] rounded-xl seat-number">B4</div>
                         </div>
                     </div>
                     <div class="pl-8 w-[30%]">
                         <h3 class="font-raleway text-2xl font-semibold border-b-2 border-dashed pb-2 mb-5">Select Your Seat</h3>
                         <div>
                             <div class="bg-[#f7f8f8] rounded-xl p-6">
-                                <table class="w-full border-b-2">
+                                <table class="w-full border-b-2" id="table">
                                     <tr class="text-left">
-                                        <th class="">Seat <span class="px-2 rounded-lg text-[#FFFFFF] bg-[#1DD100]">0</span></th>
-                                        <th class="text-center">Class</th>
+                                        <th class="">Seat <span id="seat" class="px-2 rounded-lg text-[#FFFFFF] bg-[#1DD100]">0</span></th>
+                                        <th class="text-center pr-16">Class</th>
                                         <th class="text-right">Price</th>
                                     </tr>
-                                    <tr class="text-base text-[#030712]">
-                                        <td>c2</td>
-                                        <td class="text-center">Economoy</td>
-                                        <td class="text-right">550</td>
-                                    </tr>
+                                    <!-- <tr class="text-base text-[#030712]" id="tr-table">
+                                        <td id="seat-name"></td>
+                                        <td id="seat-class" class="text-center"></td>
+                                        <td id="seat-price" class="text-right"></td>
+                                        <br>
+                                    </tr> -->
                                 </table>
+                                <div id="details" class="border-b-2 text-base font-inter text-[#03071299] justify-between">
+                                    
+                                </div>
                                 <div class="flex justify-between mt-2">
                                     <div>
                                         <p class="text-base font-medium font-inter">Total Price</p>
@@ -247,7 +251,7 @@
         <!-- seat section  -->
     </section>
     <!-- P.H Paribahan Section  -->
-
+    <script src="./scripts/index.js"></script>
 </body>
 
 </html>
