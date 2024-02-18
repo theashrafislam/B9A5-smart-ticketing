@@ -1,11 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>B9A5-smart-ticketing</title>
+    <!-- CDN of daisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- custom CSS file -->
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
+
 <body>
-    
+    <header class="container mx-auto">
+        <!-- navbar section  -->
+        <nav class="grid grid-cols-3 gap-20 justify-center items-center">
+            <div>
+                <h3 class="text-4xl text-rgb-3-7-18 font-extrabold">P-Ticket</h3>
+            </div>
+            <div class="flex justify-center">
+                <ul class="grid grid-cols-4 gap-14 text-lg font-medium text-[rgba(3, 7, 18, 0.7)]">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Destination</li>
+                    <li>Search</li>
+                </ul>
+            </div>
+            <div class="flex justify-end">
+                <div class="flex gap-2 bg-green-500 bg-opacity-10 rounded-xl py-5 px-8 border border-[#1dd100] border-opacity-40">
+                    <p class="text-xl font-bold text-[#1dd100]">Bus</p>
+                    <img src="/images/bus-icon.png" alt="">
+                </div>
+            </div>
+        </nav>
+        <!-- navbar section  -->
+    </header>
+    <main>
+
+    </main>
 </body>
+
 </html>
