@@ -5,10 +5,8 @@ let totalPrice = 0;
 let sets = [];
 for (const setNum of seatsNumber) {
     setNum.addEventListener('click', function () {
-        console.log(sets);
         if(sets.includes(setNum.innerText)){
             return;
-
         }
         if (totalSeat < 4) {
             const seat = document.getElementById('seat');
@@ -25,8 +23,6 @@ for (const setNum of seatsNumber) {
         seatsLeft.innerText = seatCount;
         setNum.classList.add('bg-green-500');
 
-
-
         const details = document.getElementById('details');
         const div = document.createElement('div');
         const p = document.createElement('p');
@@ -41,9 +37,6 @@ for (const setNum of seatsNumber) {
         div.appendChild(p3);
         details.appendChild(div);
 
-
-        
-
         totalPrice += 550;
         const totalPriceElement = document.getElementById('total-price');
         totalPriceElement.innerText = totalPrice;
@@ -55,6 +48,7 @@ for (const setNum of seatsNumber) {
 document.getElementById('applyBtn').addEventListener('click', function () {
     const inputElementValue = document.getElementById('input-field').value;
     if (inputElementValue === 'NEW15') {
+        
         const inputAll = document.getElementById('input-all');
         inputAll.classList.add('hidden');
 
@@ -66,14 +60,12 @@ document.getElementById('applyBtn').addEventListener('click', function () {
 
         const h3t = document.createElement('h3');
         const totalPriceElement = parseInt(document.getElementById('total-price').innerText);
-        console.log(totalPriceElement);
         h3t.innerText = 'BDT ' + (totalPriceElement * 15 / 100);
         h3t.classList.add('text-base', 'font-medium', 'font-inter');
         discountPrice.appendChild(h3t);
 
         const grandTotalPriceElement = document.getElementById('grand-total');
         grandTotalPriceElement.innerText = totalPriceElement - (totalPriceElement * 15 / 100);
-        console.log(typeof grandTotalPriceElement);
     }
     else if (inputElementValue === 'Couple 20') {
         const inputAll = document.getElementById('input-all');
@@ -87,14 +79,12 @@ document.getElementById('applyBtn').addEventListener('click', function () {
 
         const h3t = document.createElement('h3');
         const totalPriceElement = parseInt(document.getElementById('total-price').innerText);
-        console.log(totalPriceElement);
         h3t.innerText = 'BDT ' + (totalPriceElement * 20 / 100);
         h3t.classList.add('text-base', 'font-medium', 'font-inter');
         discountPrice.appendChild(h3t);
 
         const grandTotalPriceElement = document.getElementById('grand-total');
         grandTotalPriceElement.innerText = totalPriceElement - (totalPriceElement * 20 / 100);
-        console.log(typeof grandTotalPriceElement);
     }
     else {
         alert('Your coupon code is not valid.');
