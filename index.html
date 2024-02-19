@@ -45,7 +45,7 @@
                 directly within the app. The <br> integrated testing features allow for a streamlined .</p>
             <a href="#seat-section">
                 <button
-                class="btn btn btn-accent font-inter rounded-2xl bg-[#1DD100] border-none text-xl font-raleway flex justify-center items-center">Buy
+                    class="btn btn btn-accent font-inter rounded-2xl bg-[#1DD100] border-none text-xl font-raleway flex justify-center items-center">Buy
                     Tickets</button>
             </a>
         </div>
@@ -105,7 +105,8 @@
             <section class="pb-10">
                 <div class="text-center">
                     <h1 class="text-[#030712] font-raleway text-4xl font-bold mb-6">P.H Paribahan</h1>
-                    <p class="text-[#03071299] font-inter text-lg mb-14">Yes, you can run unit tests and view the results
+                    <p class="text-[#03071299] font-inter text-lg mb-14">Yes, you can run unit tests and view the
+                        results
                         directly within the app.
                         The integrated <br> testing features allow for a streamlined .</p>
                 </div>
@@ -163,11 +164,12 @@
         <!-- seat section  -->
         <section class="container mx-auto mb-20" id="seat-section">
             <div class="bg-white p-8 rounded-3xl">
-                
+
                 <div class="flex">
                     <!-- head  -->
                     <div class="border-r-2 border-dashed pr-8 w-[70%]">
-                        <h3 class="font-raleway text-2xl font-semibold border-b-2 border-dashed pb-2">Select Your Seat</h3>
+                        <h3 class="font-raleway text-2xl font-semibold border-b-2 border-dashed pb-2">Select Your Seat
+                        </h3>
                         <div class="py-2 border-b-2 border-dashed flex justify-between">
                             <div class="flex gap-1">
                                 <img src="./images/seat-gray.png" alt="">
@@ -180,7 +182,8 @@
                         </div>
                         <div class="mt-7">
                             <div class="flex justify-end">
-                                <div class="px-20 py-5 bg-[#F7F8F8] flex justify-center rounded-xl"><img src="./images/vector.png" alt=""></div>
+                                <div class="px-20 py-5 bg-[#F7F8F8] flex justify-center rounded-xl"><img
+                                        src="./images/vector.png" alt=""></div>
                             </div>
                         </div>
                         <div class="flex gap-10 font-inter text-lg font-medium mt-10">
@@ -199,48 +202,74 @@
                         </div>
                     </div>
                     <div class="pl-8 w-[30%]">
-                        <h3 class="font-raleway text-2xl font-semibold border-b-2 border-dashed pb-2 mb-5">Select Your Seat</h3>
+                        <h3 class="font-raleway text-2xl font-semibold border-b-2 border-dashed pb-2 mb-5">Select Your
+                            Seat</h3>
                         <div>
                             <div class="bg-[#f7f8f8] rounded-xl p-6">
                                 <table class="w-full border-b-2" id="table">
                                     <tr class="text-left">
-                                        <th class="">Seat <span id="seat" class="px-2 rounded-lg text-[#FFFFFF] bg-[#1DD100]">0</span></th>
+                                        <th class="">Seat <span id="seat"
+                                                class="px-2 rounded-lg text-[#FFFFFF] bg-[#1DD100]">0</span></th>
                                         <th class="text-center pr-16">Class</th>
                                         <th class="text-right">Price</th>
                                     </tr>
-                                    <!-- <tr class="text-base text-[#030712]" id="tr-table">
-                                        <td id="seat-name"></td>
-                                        <td id="seat-class" class="text-center"></td>
-                                        <td id="seat-price" class="text-right"></td>
-                                        <br>
-                                    </tr> -->
                                 </table>
-                                <div id="details" class="border-b-2 text-base font-inter text-[#03071299] justify-between">
-                                    
+                                <div id="details"
+                                    class="border-b-2 text-base font-inter text-[#03071299] justify-between">
+
                                 </div>
                                 <div class="flex justify-between mt-2">
                                     <div>
                                         <p class="text-base font-medium font-inter">Total Price</p>
                                     </div>
                                     <div>
-                                        <p class="text-base font-medium font-inter">BDT <span>5102</span></p>
+                                        <p class="text-base font-medium font-inter">BDT <span id="total-price">0</span></p>
                                     </div>
                                 </div>
-                                <div class="bg-white p-2 flex rounded-xl my-5">
-                                    <input type="text" class="w-[70%] rounded-xl border-2 text-lg p-2 py-0">
-                                    <button class="btn w-[30%] bg-[#1dd100] py-3 px-4 text-base font-inter ">Apply</button>
+                                <div id="discount-price" class="flex justify-between mt-2">
+
+                                </div>
+                                <div class="bg-white p-2 flex rounded-xl my-5" id="input-all">
+                                    <input type="text" class="w-[70%] rounded-xl border-2 text-lg p-2 py-0" id="input-field">
+                                    <button
+                                        class="btn w-[30%] bg-[#1dd100] py-3 px-4 text-base font-inter " id="applyBtn">Apply</button>
                                 </div>
                                 <div class="flex justify-between">
-                                    <div><h3 class="text-base font-medium font-inter">Grand Total</h3></div>
-                                    <div><h3 class="text-base font-medium font-inter">BDT <span>2000</span></h3></div>
+                                    <div>
+                                        <h3 class="text-base font-medium font-inter">Grand Total</h3>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-base font-medium font-inter">BDT <span id="grand-total">0</span></h3>
+                                    </div>
                                 </div>
                             </div>
                             <div>
-                                <button class="btn text-white font-raleway text-xl bg-[#1dd100] w-full mt-4">Next</button>
+                                <!-- <button class="btn text-white font-raleway text-xl bg-[#1dd100] w-full mt-4">Next</button> -->
+                                <!-- Open the modal using ID.showModal() method -->
+                                <button class="btn text-white font-raleway text-xl bg-[#1dd100] w-full mt-4" onclick="my_modal_1.showModal()">Next</button>
+                                <dialog id="my_modal_1" class="modal">
+                                    <div class="modal-box flex flex-col justify-center items-center">
+                                        <img src="./images/success.png" alt="">
+                                        <h3 class="font-bold text-lg my-7 text-[#27AE60]">SUCCESS</h3>
+                                        <p class="py-4 font-bold text-center text-[#4A4A4A]">Thank you for Booking Our Bus Seats. 
+                                            We are working hard to find the best service and deals for you. 
+                                            <br><span class="font-normal">Shortly you will find a confirmation in your email.</span></p>
+                                        <div class="modal-action flex justify-center">
+                                            <form method="dialog">
+                                                <!-- if there is a button in form, it will close the modal -->
+                                                <button class="btn text-xl font-semibold text-white bg-[#27AE60]">Continue</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </dialog>
                             </div>
                             <div class="flex justify-evenly mt-5">
-                                <div><p class="underline cursor-pointer">Terms and Conditions</p></div>
-                                <div><p class="underline cursor-pointer">Cancellation Policy</p></div>
+                                <div>
+                                    <p class="underline cursor-pointer">Terms and Conditions</p>
+                                </div>
+                                <div>
+                                    <p class="underline cursor-pointer">Cancellation Policy</p>
+                                </div>
                             </div>
                         </div>
                     </div>
