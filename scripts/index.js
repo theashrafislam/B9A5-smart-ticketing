@@ -92,6 +92,6 @@ document.getElementById('applyBtn').addEventListener('click', function () {
         console.log(typeof grandTotalPriceElement);
     }
     else{
-        alert('nOt working')
+        alert('Your coupon code is not valid.')
     }
 })

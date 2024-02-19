@@ -29,7 +29,7 @@
             </div>
             <div class="flex justify-end">
                 <div
-                    class="flex gap-2 bg-green-500 bg-opacity-10 rounded-xl py-5 px-8 border border-[#1dd100] border-opacity-40">
+                    class="w-[130px] right-0 flex gap-2 bg-green-500 bg-opacity-10 rounded-xl py-5 px-8 border border-[#1dd100] border-opacity-40">
                     <p class="text-xl font-bold text-[#1dd100]">Bus</p>
                     <img src="/images/bus-icon.png" alt="">
                 </div>
@@ -59,8 +59,7 @@
             </div>
             <div class="flex justify-between">
                 <!-- Card one -->
-                <div
-                    class="grid grid-cols-3 gap-5 items-center justify-center rounded-3xl bg-[#FFBF0F] h-[220px]">
+                <div class="grid grid-cols-3 gap-5 items-center justify-center rounded-3xl bg-[#FFBF0F] h-[220px]">
                     <div class="pl-10 text-nowrap font-inter font-medium text-lg">
                         <h1 class="text-4xl font-semibold text-[#030712]">15% OFF</h1>
                         <p class="font-semibold text-[#030712] text-lg">on your next purchase</p>
@@ -75,8 +74,7 @@
                     </div>
                 </div>
                 <!-- card two  -->
-                <div
-                    class="grid grid-cols-3 gap-5 items-center justify-center rounded-3xl bg-[#F78C9C]  h-[220px]">
+                <div class="grid grid-cols-3 gap-5 items-center justify-center rounded-3xl bg-[#F78C9C]  h-[220px]">
                     <div class="pl-10 text-nowrap font-inter font-medium text-lg">
                         <h1 class="text-4xl font-semibold text-[#030712]">20% OFF</h1>
                         <p class="font-semibold text-[#030712] text-lg">on your next purchase</p>
@@ -223,41 +221,49 @@
                                         <p class="text-base font-medium font-inter">Total Price</p>
                                     </div>
                                     <div>
-                                        <p class="text-base font-medium font-inter">BDT <span id="total-price">0</span></p>
+                                        <p class="text-base font-medium font-inter">BDT <span id="total-price">0</span>
+                                        </p>
                                     </div>
                                 </div>
                                 <div id="discount-price" class="flex justify-between mt-2">
 
                                 </div>
                                 <div class="bg-white p-2 flex rounded-xl my-5" id="input-all">
-                                    <input type="text" class="w-[70%] rounded-xl border-2 text-lg p-2 py-0" id="input-field">
-                                    <button
-                                        class="btn w-[30%] bg-[#1dd100] py-3 px-4 text-base font-inter " id="applyBtn">Apply</button>
+                                    <input type="text" class="w-[70%] rounded-xl border-2 text-lg p-2 py-0"
+                                        id="input-field">
+                                    <button class="btn w-[30%] bg-[#1dd100] py-3 px-4 text-base font-inter "
+                                        id="applyBtn">Apply</button>
                                 </div>
                                 <div class="flex justify-between">
                                     <div>
                                         <h3 class="text-base font-medium font-inter">Grand Total</h3>
                                     </div>
                                     <div>
-                                        <h3 class="text-base font-medium font-inter">BDT <span id="grand-total">0</span></h3>
+                                        <h3 class="text-base font-medium font-inter">BDT <span id="grand-total">0</span>
+                                        </h3>
                                     </div>
                                 </div>
                             </div>
                             <div>
                                 <!-- <button class="btn text-white font-raleway text-xl bg-[#1dd100] w-full mt-4">Next</button> -->
                                 <!-- Open the modal using ID.showModal() method -->
-                                <button class="btn text-white font-raleway text-xl bg-[#1dd100] w-full mt-4" onclick="my_modal_1.showModal()">Next</button>
+                                <button class="btn text-white font-raleway text-xl bg-[#1dd100] w-full mt-4"
+                                    onclick="my_modal_1.showModal()">Next</button>
                                 <dialog id="my_modal_1" class="modal">
                                     <div class="modal-box flex flex-col justify-center items-center">
                                         <img src="./images/success.png" alt="">
                                         <h3 class="font-bold text-lg my-7 text-[#27AE60]">SUCCESS</h3>
-                                        <p class="py-4 font-bold text-center text-[#4A4A4A]">Thank you for Booking Our Bus Seats. 
-                                            We are working hard to find the best service and deals for you. 
-                                            <br><span class="font-normal">Shortly you will find a confirmation in your email.</span></p>
+                                        <p class="py-4 font-bold text-center text-[#4A4A4A]">Thank you for Booking Our
+                                            Bus Seats.
+                                            We are working hard to find the best service and deals for you.
+                                            <br><span class="font-normal">Shortly you will find a confirmation in your
+                                                email.</span>
+                                        </p>
                                         <div class="modal-action flex justify-center">
                                             <form method="dialog">
                                                 <!-- if there is a button in form, it will close the modal -->
-                                                <button class="btn text-xl font-semibold text-white bg-[#27AE60]">Continue</button>
+                                                <button
+                                                    class="btn text-xl font-semibold text-white bg-[#27AE60]">Continue</button>
                                             </form>
                                         </div>
                                     </div>
